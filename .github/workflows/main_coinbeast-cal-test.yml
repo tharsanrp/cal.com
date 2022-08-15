@@ -2,10 +2,15 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
 name: Build and deploy Node.js app to Azure Web App - coinbeast-cal-test
+env:
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
 on:
-  push:
-  workflow_dispatch:
+  pull_request_target:
+    branches:
+      - main
+    paths:
+      - "**.tsx?"
 
 jobs:
   build:
