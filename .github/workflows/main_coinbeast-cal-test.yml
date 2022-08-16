@@ -73,5 +73,5 @@ jobs:
         with:
           app-name: 'coinbeast-cal-test'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_588B2C68929D4B6CB98656F287F0F21F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A782E9D921E8401E9DA144FC43DE73D2 }}
           package: .
