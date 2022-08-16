@@ -3,7 +3,12 @@
 
 name: Build and deploy Node.js app to Azure Web App - coinbeast-cal-test
 env:
-  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  PGDATABASE: ${{ secrets.PGDATABASE }}
+  PGHOST: ${{ secrets.PGHOST }}
+  PGPASSWORD: ${{ secrets.PGPASSWORD }}
+  PGPORT: ${{ secrets.PGPORT }}
+  PGSSLMODE: ${{ secrets.PGSSLMODE }}
+  PGUSER: ${{ secrets.PGUSER }}
 
 on: workflow_dispatch
 
