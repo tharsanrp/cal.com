@@ -50,7 +50,7 @@ jobs:
 
       - name: zip build
         run: |
-          zip node-app.zip .
+          zip node-app.zip ./
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
